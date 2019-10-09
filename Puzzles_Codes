@@ -1,0 +1,28 @@
+package coding;
+
+import java.util.Scanner;
+
+
+public class Puzzle {
+	@SuppressWarnings("resource")
+	public static void main(String args[])
+	{
+		
+		int sum1,sum;
+		
+		for(int b=1;b<99;b++)
+		{
+			for(int g=1;g<99;g++)
+			{
+			sum1=2*(b*g)+42;
+			sum=(b+g)*(b+g+1);
+			
+			if(sum1==sum)
+			{
+			System.out.println(b+"\t"+g+"\t"+sum1);
+			}
+			}
+	}
+		
+	}
+}
