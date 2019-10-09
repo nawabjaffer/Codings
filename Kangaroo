@@ -1,0 +1,52 @@
+package coding;
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Kangaroo {
+
+    public static void main(String[] args)  {
+        
+    	Scanner scanner = new Scanner(System.in);
+    	int moves1=0,moves2=0;
+      
+        int x1 = scanner.nextInt();
+
+        int v1 = scanner.nextInt();
+
+        int x2 = scanner.nextInt();
+
+        int v2 = scanner.nextInt();
+        String str="";
+        
+        for(int i=x1;i<1000;i+=v1)
+        {
+        	moves1++;
+            for(int j=x2;j<1000;j+=v2)
+            {
+            	moves2++;
+                if(moves1==moves2);
+                 if(i==j)
+                {
+                    str="No";
+                }
+                else
+                {
+                	str="Yes";
+                }
+               
+                
+            }
+        }
+        System.out.print(str);
+        
+
+    }
+    }
+    
+
